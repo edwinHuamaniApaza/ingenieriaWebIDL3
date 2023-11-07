@@ -1,0 +1,29 @@
+<h2 class="text-center text-2xl mt-8">Nueva Tarea</h2>
+<div class="w-full max-w-xs m-auto">
+  <form #categoryForm="ngForm" (ngSubmit)="submitForm(categoryForm)"  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <input type="text" name="id" [(ngModel)]="categoryService.selectCategory.id">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2">
+        Titulo
+      </label>
+      <input [(ngModel)]="categoryService.selectCategory.titulo" name="titulo" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="titulo">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Descripción
+      </label>
+      <input [(ngModel)]="categoryService.selectCategory.descripcion" name="descripcion" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="descripcion">
+    </div>
+    <div class="flex items-center justify-between">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Guardar
+      </button>
+      <a routerLink="/" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+        Regresar
+      </a>
+    </div>
+  </form>
+  <!-- <p class="text-center text-gray-500 text-xs">
+    &copy;2020 Acme Corp. All rights reserved.
+  </p> -->
+</div>

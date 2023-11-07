@@ -1,0 +1,11 @@
+.disabled {
+    opacity: 0.5; /* Cambia la opacidad para indicar deshabilitación */
+    pointer-events: none; /* Evita que los elementos de la fila sean interactivos */
+    text-decoration: line-through; /* Aplica una línea a través del texto */
+    /* Agrega otros estilos según tus preferencias */
+  }
+  .disabled2 {
+    opacity: 0.5; /* Cambia la opacidad para indicar deshabilitación */
+    pointer-events: none; /* Evita que los elementos de la fila sean interactivos */
+    
+  }
